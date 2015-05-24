@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Jakob Herpel, Medieninformatik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div align="center" id="title">
+        Information und Codierung WiSe 14/15    
+    </div>
+
+    <div id="menu">
+    <table id ="menu" cellspacing="6">
+        <tr><td><a href="./IC.html">Home</a></td></tr>
+        <tr><td><a href="./Logarithmen.html">1.1 Logarithmen</a></td></tr>
+        <tr><td><a href="./Kombinatorik.html">1.2 Grundlagen der Kombinatorik und Zahlentheorie</a></td></tr>
+        <tr><td><a href="./Dokumentation.html">1.3 Dokumentation im WWW</a></td></tr>
+        <tr><td><a href="./Alphabete.html">2.1 Alphabete</a></td></tr>
+        <tr><td><a href="./Visuelle_Aufloesung.html">2.3 Visuelle Auflösung</a></td></tr>
+        <tr><td><a href="./AkustischeSignale.html">3.2 Akustische Signale</a></td></tr>
+        <tr><td><a href="./OptischeSignale.html">3.3 Optische Signale</a></td></tr>
+        <tr><td><a href="./Mediendateien.html">3.4 Mediendateien</a></td></tr>
+        <tr><td><a href="./Evaluierung.html">4.1 Evaluierung des E-Learning Systems</a></td></tr>
+        <tr><td><a href="./Matrixdarstellungen.html">4.2 Matrixdarstellungen von Graphen</a></td></tr>
+        <tr><td><a href="./Wellenausbreitung.html">4.4 Wellenausbreitung und Antennenhöhen</a></td></tr>
+        <tr><td><a href="./Abtasttheorem.html">5.2 Abtasttheorem</a></td></tr>
+        <tr><td><a href="./Datenvolumen.html">5.3 Datenvolumen und Datenrate</a></td></tr>
+        <tr><td><a href="./HuffmanCode.html">6.4 Huffman-Code</a></td></tr>
+        <tr><td><a href="./Bitverarbeitung.html">7.2 Bitverarbeitung</a></td></tr>
+    </table>
+    </div>
+
+    <div id="content">
+        <h2>b)</h2>
+        <h3>Weber-Fechnersches Gesetz:</h3>
+            <img src="../img/WeberFechner.png" width="99" height="44" alt="Weber-Fechner Gesetz">
+            <p>
+                Wikipedia: "Das Weber-Fechner-Gesetz besagt, dass sich die subjektiv empfundene Stärke von Sinneseindrücken proportional zum Logarithmus der objektiven Intensität des physikalischen Reizes verhält."
+            </p>
+            <p>
+                Das Gesetz beschreibt also die Tatsache, dass Menschen bestimmte Reize (Tasten, Schmecken, Sehen, Hören, etc.) erst ab einer gewissen Schwelle überhaupt wahrnehmen und sich allgemein das subjektive Empfinden von Reizen stark abweicht von der objektiven Realität. Da es sich um eine Logarithmusfunktion handelt, steigt das persönliche Empfinden nicht proportional zum physikalischen Phänomen. Je stärker der Reiz bereits ist, desto höher muss die Reizsteigerung ausfallen um subjektiv als deutliche Steigerung empfunden zu werden. So werden zum Beispiel leise Geräusche (tropfender Wasserhahn) in relativer Stille (Nacht) viel stärker wahrgenommen als sogar laute Geräusche (Ruf) in lauter Klangumgebung (Konzert).
+            </p>
+
+        <h3>Spannungspegel:</h3>
+            <img src="../img/Spannungspegel.png" width="92" height="36" alt="Spannungspegel">
+            <p>
+                Mithilfe dieser Formel lässt sich elektrische Spannung in logarithmischer Form darstellen. Dies ist insbesondere hilfreich, wenn mehrere Bauelemente hintereinander geschaltet werden. Ohne die logarithmische Darstellung müssten wesentlich kompliziertere Rechnungen aufgelöst werden, um die resultierende Spannung herauszufinden. Im Übrigen entspricht die logarithmische Darstellung von Spannungspegeln in der Tontechnik auch viel eher der menschlichen Tonwahrnehmung.
+            </p>
+
+        <h3>Datenmenge:</h3>
+            <img src="../img/Datenmenge.png" width="70" height="15" alt="Datenmenge">
+            <p>
+                M ist die Anzahl der Bits, die benötigt werden, um N verschiedene Zustände abzubilden. Für die Datenmenge bedeutet die Funktion folgendes:
+
+                1. Je mehr verschiedene Zustände abbildbar sein sollen, desto größer die Datenmenge.
+
+                2. Für jeden weiteren Zuwachs an abbildbaren Zuständen wird die benötigte Zunahme der Datenmenge geringer. Das heißt, dass der Speicherbedarf umso langsamer wächst, je mehr Informationen abzuspeichern sind.
+            </p>
+
+        <h4>Funktionsgraphen:</h4>
+        Die Formel des Weber-Fechner Gesetzes entspricht der Funktion des natürlichen Logarithmus, wenn man c, R0 = 1 annimmt (blau). Die Umkehrfunktion zu dieser ist e^x (rot): 
+
+        <img src="../img/lnXpowEX.png" width="564" height="561" alt="Funktionsgraph"><br>
+        (Funktionsgraph erstellt mit graph.tk)
+
+        <br>
+        Der Funktionsterm zur Funktion des Spannungspegels ist 20*log(u) wenn u0 = 1 ist. <br> Die Umkehrfunktion lautet dann 10^(x/20):<br>
+
+        <img src="../img/20log.png" width="654" height="645" alt="Funktionsgraph"><br>
+        (Funktionsgraph erstellt mit graph.tk)
+        <br>
+        <br>
+        Die Funktion zur Datenmenge ist der Logarithmus dualis (zur Basis 2). Seine Umkehrfunktion ist die Exponentialfunktion 2^x:<br>
+        <img src="../img/log2.png" width="588" height="585" alt="Funktionsgraph"><br>
+        (Funktionsgraph erstellt mit graph.tk)
+
+
+        <h2>c:</h2>
+        <p>Um eine Logarithmusfunktion in eine Logarithmusfunktion anderer Basis zu transformieren, bildet man den Bruch aus Logarithmus zu neuer Basis mit altem Argument und Logarithmus ebenfalls zur neuen Basis mit der alten Basis als Argument:
+        </p>
+        <img src="../img/LogarithmusTransformation.png" width="86" height="85" alt="Logarithmustransformation">
+
+        <p>
+        Tabelle für alle Varianten zwischen lg(x), ln(x) und ld(x):
+        </p>
+        <img src="../img/LogarithmusTabelle.png" width="247" height="96" alt="Logarithmus Tabelle">
+
+
+    </body>
+</html>

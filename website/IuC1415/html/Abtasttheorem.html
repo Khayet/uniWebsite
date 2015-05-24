@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+
+<head>
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Information und Codierung WiSe 14/15</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div align="center" id="title">
+        Information und Codierung WiSe 14/15    
+    </div>
+
+    <div id="menu">
+    <table id ="menu" cellspacing="6">
+        <tr><td><a href="./IC.html">Home</a></td></tr>
+        <tr><td><a href="./Logarithmen.html">1.1 Logarithmen</a></td></tr>
+        <tr><td><a href="./Kombinatorik.html">1.2 Grundlagen der Kombinatorik und Zahlentheorie</a></td></tr>
+        <tr><td><a href="./Dokumentation.html">1.3 Dokumentation im WWW</a></td></tr>
+        <tr><td><a href="./Alphabete.html">2.1 Alphabete</a></td></tr>
+        <tr><td><a href="./Visuelle_Aufloesung.html">2.3 Visuelle Auflösung</a></td></tr>
+        <tr><td><a href="./AkustischeSignale.html">3.2 Akustische Signale</a></td></tr>
+        <tr><td><a href="./OptischeSignale.html">3.3 Optische Signale</a></td></tr>
+        <tr><td><a href="./Mediendateien.html">3.4 Mediendateien</a></td></tr>
+        <tr><td><a href="./Evaluierung.html">4.1 Evaluierung des E-Learning Systems</a></td></tr>
+        <tr><td><a href="./Matrixdarstellungen.html">4.2 Matrixdarstellungen von Graphen</a></td></tr>
+        <tr><td><a href="./Wellenausbreitung.html">4.4 Wellenausbreitung und Antennenhöhen</a></td></tr>
+        <tr><td><a href="./Abtasttheorem.html">5.2 Abtasttheorem</a></td></tr>
+        <tr><td><a href="./Datenvolumen.html">5.3 Datenvolumen und Datenrate</a></td></tr>
+        <tr><td><a href="./HuffmanCode.html">6.4 Huffman-Code</a></td></tr>
+        <tr><td><a href="./Bitverarbeitung.html">7.2 Bitverarbeitung</a></td></tr>
+    </table>
+    </div>
+
+    <div id="content">
+    <h1>5.2 Abtasttheorem</h1>
+
+    <h2>a)</h2>
+    Die Bytes 24 und 25 der .wav Datei stellen die Abtastrate dar. Im Hex-Editor lassen sich diese als "44 AC" erkennen, die Darstellung der Bytes ist Little Endian, das heißt das LSB (least significant bit) steht an der linkesten Stelle und das MSB (most significant bit) an der rechtesten. Die Abtastrate entspricht im Dezimalsystem also 44.100 Herz. <br>
+    Laut Abtasttheorem muss die Abtastrate doppelt so hoch sein wie die Frequenz einer Aufnahme, um aus der digitalen Datei einen unverfälschten Ton berechnen zu können. Eine Abtastrate von 44,1 kHz bedeutet also, dass eine maximale Frequenz von 22,05 kHz dargestellt werden kann. Typischerweise liegt das Hörvermögen eines Menschen zwischen 20 Hz und 20 kHz, daher ist die Abtastrate ideal.
+
+    <h2>b)</h2>
+        <style type="text/css">
+    .tg  {border-collapse:collapse;border-spacing:0;}
+    .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+    .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+    </style>
+    <table class="tg">
+      <tr>
+        <th class="tg-031e">Abtastrate</th>
+        <th class="tg-031e">Hexadezimalcodierung</th>
+        <th class="tg-031e">Audiodatei (Link)</th>
+      </tr>
+      <tr>
+        <td class="tg-031e">65 535 Hz</td>
+        <td class="tg-031e">FF FF 00 00</td>
+        <td class="tg-031e"><a href="../audio/voice_65535.wav">voice_65535.wav</a></td>
+      </tr>
+      <tr>
+        <td class="tg-031e">40 000 Hz</td>
+        <td class="tg-031e">04 C9 00 00</td>
+        <td class="tg-031e"><a href="../audio/voice_40000.wav">voice_40000.wav</td>
+      </tr>
+      <tr>
+        <td class="tg-031e">35 000 Hz</td>
+        <td class="tg-031e">8B 88 00 00</td>
+        <td class="tg-031e"><a href="../audio/voice_35000.wav">voice_35000.wav</td>
+      </tr>
+      <tr>
+        <td class="tg-031e">30 000 Hz</td>
+        <td class="tg-031e">03 57 00 00</td>
+        <td class="tg-031e"><a href="../audio/voice_30000.wav">voice_30000.wav</td>
+      </tr>
+      <tr>
+        <td class="tg-031e">25 000 Hz</td>
+        <td class="tg-031e">8A 16 00 00</td>
+        <td class="tg-031e"><a href="../audio/voice_25000.wav">voice_25000.wav</td>
+      </tr>
+      <tr>
+        <td class="tg-031e">20 000 Hz</td>
+        <td class="tg-031e">02 E4 00 00</td>
+        <td class="tg-031e"><a href="../audio/voice_20000.wav">voice_20000.wav</td>
+      </tr>
+      <tr>
+        <td class="tg-031e">15 000 Hz</td>
+        <td class="tg-031e">89 A3 00 00</td>
+        <td class="tg-031e"><a href="../audio/voice_15000.wav">voice_15000.wav</td>
+      </tr>
+      <tr>
+        <td class="tg-031e">10 000 Hz</td>
+        <td class="tg-031e">01 72 00 00</td>
+        <td class="tg-031e"><a href="../audio/voice_10000.wav">voice_10000.wav</td>
+      </tr>
+      <tr>
+        <td class="tg-031e">5 000 Hz</td>
+        <td class="tg-031e">88 31 00 00 </td>
+        <td class="tg-031e"><a href="../audio/voice_5000.wav">voice_5000.wav</td>
+      </tr>
+      <tr>
+        <td class="tg-031e">1 000 Hz</td>
+        <td class="tg-031e">8E 30 00 00</td>
+        <td class="tg-031e"><a href="../audio/voice_1000.wav">voice_1000.wav</td>
+      </tr>
+    </table>
+    (Tabelle erstellt mit http://www.tablesgenerator.com/html_tables) 
+
+    <h2>c)</h2>
+    Ab 25 kHz lässt sich das Gesagte nur noch erkennen, wenn man weiß, was gesagt wird. Unter 15 kHz ist die Aufnahme nur noch ein Geräusch und als Stimme nicht mehr zu erkennen. <br>
+    Das Abtasttheorem geht von einer analogen Originalquelle aus, die abgetastet wird. Hier wird jedoch nur die Abtastrate einer digitalen Datei verändert, was die Abspielgeschwindigkeit verändert: Die Abtastrate gibt die Abtastungen pro Sekunde an. <br>
+    <br>
+        <style type="text/css">
+    .tg  {border-collapse:collapse;border-spacing:0;}
+    .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+    .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+    </style>
+    <table class="tg">
+      <tr>
+        <th class="tg-031e">Abtastrate</th>
+        <th class="tg-031e">Audiodatei (Link)</th>
+      </tr>
+      <tr>
+        <td class="tg-031e">48 000 Hz</td>
+        <td class="tg-031e"><a href="../audio/armerTor_48000.wav">armerTor_48000.wav</td>
+      </tr>
+      <tr>
+        <td class="tg-031e">32 000 Hz</td>
+        <td class="tg-031e"><a href="../audio/armerTor_32000.wav">armerTor_32000.wav</td>
+      </tr>
+      <tr>
+        <td class="tg-031e">16 000 Hz</td>
+        <td class="tg-031e"><a href="../audio/armerTor_16000.wav">armerTor_16000.wav</td>
+      </tr>
+      <tr>
+        <td class="tg-031e">8 000 Hz</td>
+        <td class="tg-031e"><a href="../audio/armerTor_8000.wav">armerTor_8000.wav</td>
+      </tr>
+      <tr>
+        <td class="tg-031e">4 000 Hz</td>
+        <td class="tg-031e"><a href="../audio/armerTor_4000.wav">armerTor_4000.wav</td>
+      </tr>
+    </table>
+    (Tabelle erstellt mit http://www.tablesgenerator.com/html_tables) <br>
+    <br>
+    Im Vergleich zu der oberen übersteht diese Aufnahme die Reduktion der Abtastrate sehr gut. Erst ab 8000 Hz gibt es eine merkliche Verschlechterung der Qualität und selbst bei 4000 Hz lässt sich mit gutem Willen noch der Satz erkennen. Laut <a href="http://de.wikipedia.org/wiki/Menschliche_Stimme">de.wikipedia.org/wiki/Menschliche_Stimme</a> liegt der Grundton einer durchschnittlichen männlichen Stimme bei 125 Hz und die zum klaren Verständnis wichtigen Obertöne zwischen 80 Hz und 12 kHz. Daher liegt die menschliche Stimme selbst bei stark reduzierter Abtastrate zum größten Teil noch im darstellbaren Bereich. Laut Abtasttheorem müsste eine 2*12000Hz = 24 000 Hz hohe Abtastrate ausreichen, um sämtliche Obertöne abzubilden. Für eine verständliche Stimme aber reicht eine sehr viel niedrigere. 
+
+    <h2>d)</h2>
+    Ignoriert man das Rauschen, lässt sich aus dem Spektrogram von 1.3 interpretieren, dass die höchste Frequenz der Datei unter 10 kHz liegen muss. Mit dem Frequenzanalyse-Tool lässt sich der Wert genauer bestimmen: Er liegt etwa bei 8000 Hz. Laut Kotelnikow-Nyquist-Shannon bräuchte es also 2*8000Hz = 16 000 Hz hohe Abtastrate, um meine Stimme nahezu perfekt aufzunehmen. Mit dieser Erkenntnis lässt sich ist auch klar, warum erst die Aufnahme mit 8000Hz Abtastrate eine merkliche Qualitätsverschlechterung brachte: Alle höheren Abtastraten können sämtliche Obertöne abbilden.
+
+</body>
+</html>
